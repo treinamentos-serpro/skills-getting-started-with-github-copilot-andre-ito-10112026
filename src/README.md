@@ -25,6 +25,21 @@ Uma aplicação FastAPI super simples que permite que estudantes visualizem e se
    - Documentação da API: http://localhost:8000/docs
    - Documentação alternativa: http://localhost:8000/redoc
 
+## Testes de backend
+
+Os testes automatizados de backend ficam no diretório `tests/` na raiz do repositório.
+
+Para executar:
+
+```bash
+pytest -q
+```
+
+Cobertura atual dos testes:
+
+- `GET /activities`
+- `POST /activities/{activity_name}/signup` (fluxos de sucesso, erro e casos de borda)
+
 ## Endpoints da API
 
 | Método | Endpoint                                                          | Descrição                                                                   |
